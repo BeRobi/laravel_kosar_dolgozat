@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id('item_id');
             $table->foreignId('type_id')->references('type_id')->on('product_types');
             $table->date('date');
+            $table->integer('quantity');
             $table->timestamps();
         });
     }
